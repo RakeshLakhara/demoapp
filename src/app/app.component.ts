@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demoapp';
+  currentVal;
+  getVal(val)
+  {
+      this.currentVal = val;
+  }
 }
