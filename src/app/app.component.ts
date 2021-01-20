@@ -12,6 +12,25 @@ export class AppComponent {
   color = 'yellow';
   currentVal;
   disabledBox = true;
+  data = ['rakesh','Rtg','Akash','Rahul'];
+  dataObj = [
+    {
+      name:'Rtg',
+      age:'25'
+    },
+    {
+      name:'sam',
+      age:'26'
+    },
+    {
+      name:'akash',
+      age:'27'
+    },
+    {
+      name:'Rahul',
+      age:'28'
+    }
+  ];
   getVal(val)
   {
       this.currentVal = val;
