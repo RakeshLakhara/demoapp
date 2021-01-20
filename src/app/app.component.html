@@ -31,3 +31,12 @@
 <ng-template [ngIf]="show == 'blue'">
   <h1>blue block</h1>
 </ng-template>
+
+<h1>Swicth case in angular</h1>
+<div [ngSwitch]="color">
+    <h2 style="color: red;" *ngSwitchCase="'red'">red color</h2>
+    <h2 style="color: green;" *ngSwitchCase="'green'">green color</h2>
+    <h2 style="color: blue;" *ngSwitchCase="'blue'">blue color</h2>
+    <h2 style="color: yellow;" *ngSwitchCase="'yellow'">yellowk color</h2>
+    <h2 *ngSwitchDefault>default color</h2>
+</div>

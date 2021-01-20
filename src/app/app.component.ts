@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'demoapp';
   name = 'rocky';
   show = "blue";
+  color = 'yellow';
   currentVal;
   disabledBox = true;
   getVal(val)
