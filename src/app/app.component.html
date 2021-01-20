@@ -31,7 +31,7 @@
 <ng-template [ngIf]="show == 'blue'">
   <h1>blue block</h1>
 </ng-template>
-
+<!-- 
 <h1>Swicth case in angular</h1>
 <div [ngSwitch]="color">
   <h2 style="color: red" *ngSwitchCase="'red'">red color</h2>
@@ -54,4 +54,14 @@
     <td>{{ item.name }}</td>
     <td>{{ item.age }}</td>
   </tr>
-</table>
+</table> -->
+<h1>Simple Form in angular</h1>
+<form #simpleForm="ngForm" (ngSubmit)="getFormValues(simpleForm.value)">
+    <input type="text" ngModel name="userName" placeholder="Enter User Name"/>
+    <br><br>
+    <input type="text" ngModel name="age" placeholder="Enter Age"/>
+    <br><br>
+    <input type="text" ngModel name="address" placeholder="Enter User Address"/>
+    <br><br>
+    <button>Get User Values</button>
+</form>

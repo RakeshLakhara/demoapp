@@ -35,6 +35,10 @@ export class AppComponent {
   {
       this.currentVal = val;
   }
+  getFormValues(val)
+  {
+      console.log(val);
+  }
   enableBox()
   {
      this.disabledBox = false;
