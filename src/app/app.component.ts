@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'demoapp';
   name = 'rocky';
+  show = "blue";
   currentVal;
   disabledBox = true;
   getVal(val)
