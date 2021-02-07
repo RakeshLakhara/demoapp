@@ -56,7 +56,8 @@
     <td>{{ item.age }}</td>
   </tr>
 </table> -->
-<h1>Simple Form in angular</h1>
+<!--lecture #16-->
+<!-- <h1>Simple Form in angular</h1>
 <form #simpleForm="ngForm" (ngSubmit)="getFormValues(simpleForm.value)">
     <input type="text" ngModel name="userName" placeholder="Enter User Name"/>
     <br><br>
@@ -66,4 +67,13 @@
     <br><br>
     <button>Get User Values</button>
 </form>
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+<h1>Style Binding in angular</h1>
+<h1 style="color: red;">heading !!!</h1>
+<h1 [style.color]="'green'">heading :0:0</h1>
+
+<h1 [style.color]="color">heading :1</h1>
+
+<button (click)="updateColor()">update color</button>
+
+<h1 [style.color]="err?'red':'green'">conditional style :1</h1>

@@ -13,6 +13,7 @@ export class AppComponent {
   currentVal;
   disabledBox = true;
   data = ['rakesh','Rtg','Akash','Rahul'];
+  err = true;
   dataObj = [
     {
       name:'Rtg',
@@ -42,5 +43,8 @@ export class AppComponent {
   enableBox()
   {
      this.disabledBox = false;
+  }
+  updateColor(){
+    this.err = !this.err;
   }
 }
